@@ -43,12 +43,6 @@ def get_spicy_food_by_cuisine(spicy_foods, cuisine):
             return food
     return None
 
-# print(get_spicy_food_by_cuisine(spicy_foods, "American"))
-
-    # food_by_cuisine = [food for food in spicy_foods if cuisine == food["cuisine"]]
-    # return food_by_cuisine[0] if food_by_cuisine else None
-# print(get_spicy_food_by_cuisine(spicy_foods, "American"))
-
 def print_spiciest_foods(spicy_foods):
     spiciest_foods = [
         food for food in spicy_foods if food.get("heat_level") > 5]
